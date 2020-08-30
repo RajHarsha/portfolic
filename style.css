@@ -272,7 +272,7 @@ html {
   
   .center-p {
   margin: auto;
-  width: 60%;
+  width: 60%!important;
   border: 3px solid #e50914;
   padding: 10px;
   border-radius: 13px;
