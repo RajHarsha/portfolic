@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {  
+        var jsondata = JSON.stringify({
+            val1:"this",
+            val2:"that"
+        });  
+
+        $.ajax({
+            url: "https://formspree.io/harshanraj93@gmail.com",
+            method: "POST",        
+            data: {json: jsondata},
+            contentType: "application/json",
+            success: function(data){alert(JSON.stringify(data));},
+            error: function(errMsg) {
+                alert(JSON.stringify(errMsg));
+            }
+        });
+    });
+    </script>
+</head>
+<body>
+ <h1>Sample test<h1>
+</body>
+</html>
