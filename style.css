@@ -48,6 +48,10 @@ html {
     padding-left: 15px;
     padding-right: 15px;
  }
+ .flex-center-cust {
+   display: flex;
+   justify-content: center;
+ }
  .bg-black {
        background-color: #222;
  }
@@ -276,6 +280,128 @@ html {
   border: 3px solid #e50914;
   padding: 10px;
   border-radius: 13px;
+  }
+  .progress {
+    display: -ms-flexbox;
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    line-height: 0;
+    font-size: 0.75rem;
+    background-color: #fff;
+    border-radius: 0.25rem;
+  }
+  
+  .progress-bar-75 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e50914;
+    transition: width 0.6s ease;
+    animation: loadb 5s infinite forwards;
+  }
+  
+  @keyframes loadb {
+    0% { width: 0;}
+    /* 25% { width: 40%;} */
+    100% {
+      width: 75%;
+    }
+  }
+  .progress-bar-70 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e50914;
+    transition: width 0.6s ease;
+    animation: loada 5s infinite forwards;
+  }
+  @keyframes loada {
+    0% { width: 0;}
+    /* 25% { width: 40%;} */
+    100% {
+      width: 70%;
+    }
+  }
+  .progress-bar-80 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e50914;
+    transition: width 0.6s ease;
+    animation: loads 5s infinite forwards;
+  }
+  @keyframes loads {
+    0% { width: 0;}
+    /* 25% { width: 40%;} */
+    100% {
+      width: 80%;
+    }
+  }
+  .progress-bar-85 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e50914;
+    transition: width 0.6s ease;
+    animation: loading 5s infinite forwards;
+  }
+  @keyframes loading {
+    0% { width: 0;}
+    /* 25% { width: 40%;} */
+    100% {
+      width: 85%;
+    }
+  }
+  .progress-bar-65 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e50914;
+    transition: width 0.6s ease;
+    animation: loaded 5s infinite forwards;
+  }
+  @keyframes loaded {
+    0% { width: 0;}
+    /* 25% { width: 40%;} */
+    100% {
+      width: 65%;
+    }
   }
 
 
