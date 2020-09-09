@@ -40,37 +40,27 @@ function validateEmail(email) {
  }
 //  ContactMe
 
-//  $("#sendForm").click(function(){
-//    const $errorE = $("#errorEmail");
-//    const email = $("#InputEmail").val();
-//    const $errorT = $("#errorText");
-//    const textArea = $("#ControlTextarea").val();
-//    var formData = {
-//        'textArea' :$("#ControlTextarea").val()
-//    };
-//    if(!validateEmail(email)) {
-//       $errorE.text("Email can either required or not valid").css("color", "yellow");
-//    } else if (!textArea) {
-//       $errorT.text("Explanation required").css("color", "yellow");
-//    } else {
-//       $.ajax({
-//          url:"https://formspree.io/harshanraj93@gmail.com",
-//          method:"POST",
-//          data:formData,
-//          dataType: "json"
-//          });
-//       }
-//    });
-
-   $("#sendForm").submit(function(e) {
-      e.preventDefault();
-    
-      var $form = $(this);
-      $.post($form.attr("action"), $form.serialize()).then(function() {
-        alert("Thank you!");
-      });
-    });
-    
+ $("#sendForm").click(function(){
+   const $errorE = $("#errorEmail");
+   const email = $("#InputEmail").val();
+   const $errorT = $("#errorText");
+   const textArea = $("#ControlTextarea").val();
+   var formData = {
+       'textArea' :$("#ControlTextarea").val()
+   };
+   if(!validateEmail(email)) {
+      $errorE.text("Email can either required or not valid").css("color", "yellow");
+   } else if (!textArea) {
+      $errorT.text("Explanation required").css("color", "yellow");
+   } else {
+      $.ajax({
+         url:"https://formspree.io/harshanraj93@gmail.com",
+         method:"POST",
+         data:formData,
+         dataType: "json"
+         });
+      }
+   });
 
   // Nav bar 
   $('#skills').click(function() {
