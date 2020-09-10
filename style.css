@@ -48,6 +48,9 @@ html {
     padding-left: 15px;
     padding-right: 15px;
  }
+ .w-cst-50 {
+   width: 50px;
+ }
  .flex-center-cust {
    display: flex;
    justify-content: center;
@@ -105,8 +108,8 @@ html {
  .scroll-top {
      color:#e50914;
      padding-top: 40px;
-     padding-right: 15px;
-     padding-left: 15px;
+     /* padding-right: 15px;
+     padding-left: 15px; */
      position:fixed;
      bottom:95px;
      right:55px;
