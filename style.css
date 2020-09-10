@@ -115,7 +115,7 @@ html {
      right:55px;
      z-index: 999;
      cursor: pointer;
-     clip-path: polygon(50% 44%, 0 100%, 100% 100%);
+     /* clip-path: polygon(50% 44%, 0 100%, 100% 100%); */
      animation: scrollup 4s infinite;
     }
     @keyframes scrollup {
