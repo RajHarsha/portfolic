@@ -31,7 +31,7 @@ html {
 .background-light1 {
     background-color: #e5091400;
 }
- }
+ 
  .h-319 {
      height: 319px;
  }
@@ -269,7 +269,7 @@ html {
     padding-bottom: 170px
   }
   ul li::before {
-    content: "\2022";
+    
     color: #e50914;
     font-weight: bold;
     display: inline-block; 
